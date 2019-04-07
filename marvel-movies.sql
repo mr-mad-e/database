@@ -9,8 +9,8 @@ DROP DATABASE IF EXISTS `test`;
 CREATE DATABASE `test` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `test`;
 
-DROP TABLE IF EXISTS `mytable`;
-CREATE TABLE `mytable` (
+DROP TABLE IF EXISTS `movies`;
+CREATE TABLE `movies` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `Title` varchar(35) DEFAULT NULL,
   `Year` int(11) DEFAULT NULL,
@@ -39,8 +39,8 @@ CREATE TABLE `mytable` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-TRUNCATE `mytable`;
-INSERT INTO `mytable` (`Id`, `Title`, `Year`, `Rated`, `Released`, `Runtime`, `Genre`, `Director`, `Writer`, `Actors`, `Plot`, `Language`, `Country`, `Awards`, `Poster`, `Metascore`, `imdbRating`, `imdbVotes`, `imdbID`, `Type`, `DVD`, `BoxOffice`, `Production`, `Website`, `Response`) VALUES
+TRUNCATE `movies`;
+INSERT INTO `movies` (`Id`, `Title`, `Year`, `Rated`, `Released`, `Runtime`, `Genre`, `Director`, `Writer`, `Actors`, `Plot`, `Language`, `Country`, `Awards`, `Poster`, `Metascore`, `imdbRating`, `imdbVotes`, `imdbID`, `Type`, `DVD`, `BoxOffice`, `Production`, `Website`, `Response`) VALUES
 (1,	'Iron Man',	2008,	'PG-13',	'02 May 2008',	'126 min',	'Action, Adventure, Sci-Fi',	'Jon Favreau',	'Mark Fergus (screenplay), Hawk Ostby (screenplay), Art Marcum (screenplay), Matt Holloway (screenplay), Stan Lee (characters), Don Heck (characters), Larry Lieber (characters), Jack Kirby (characters)',	'Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow',	'After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.',	'English, Persian, Urdu, Arabic, Hungarian',	'USA',	'Nominated for 2 Oscars. Another 20 wins & 65 nominations.',	'https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg',	'79',	'7.9',	'835,580',	'tt0371746',	'movie',	'30 Sep 2008',	'$318,298,180',	'Paramount Pictures',	'http://www.ironmanmovie.com/',	'True'),
 (2,	'The Incredible Hulk',	2008,	'PG-13',	'13 Jun 2008',	'112 min',	'Action, Adventure, Sci-Fi',	'Louis Leterrier',	'Zak Penn (screenplay), Zak Penn (screen story), Stan Lee (Marvel comic book), Jack Kirby (Marvel comic book)',	'Edward Norton, Liv Tyler, Tim Roth, William Hurt',	'Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into, whenever he loses his temper.',	'English, Portuguese, Spanish',	'USA',	'1 win & 8 nominations.',	'https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_SX300.jpg',	'61',	'6.8',	'388,957',	'tt0800080',	'movie',	'21 Oct 2008',	'$134,518,390',	'Universal Pictures',	'http://www.incrediblehulk.com/',	'True'),
 (3,	'Iron Man 2',	2010,	'PG-13',	'07 May 2010',	'124 min',	'Action, Adventure, Sci-Fi',	'Jon Favreau',	'Justin Theroux (screenplay), Stan Lee (Marvel comic book), Don Heck (Marvel comic book), Larry Lieber (Marvel comic book), Jack Kirby (Marvel comic book)',	'Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Scarlett Johansson',	'With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father\'s legacy.',	'English, French, Russian',	'USA',	'Nominated for 1 Oscar. Another 7 wins & 42 nominations.',	'https://m.media-amazon.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_SX300.jpg',	'57',	'7.0',	'635,948',	'tt1228705',	'movie',	'28 Sep 2010',	'$312,057,433',	'Paramount Studios',	'http://www.ironmanmovie.com/',	'True'),
